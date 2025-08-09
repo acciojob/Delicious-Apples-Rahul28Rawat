@@ -1,1 +1,137 @@
+
 /* your code here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: #00e78f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  background: #fff;
+  display: flex;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Product Photo Section */
+.product__photo {
+  flex: 1;
+  background: #c1f1a9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 10px 0 0 10px;
+}
+
+.photo-container {
+  text-align: center;
+}
+
+.photo-main img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 20px;
+}
+
+.photo-album ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.photo-album img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Info Section */
+.product__info {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product__info h1 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #444;
+}
+
+.product__info .code {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.price {
+  font-size: 28px;
+  color: #e50000;
+  font-weight: bold;
+}
+
+.variant p {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.variant ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.variant li img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+}
+
+.description h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description ul {
+  list-style: disc;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #444;
+}
+
+.add-to-cart {
+  padding: 12px;
+  background: #ff4d4d;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 150px;
+  align-self: start;
+  transition: background 0.3s;
+}
+
+.add-to-cart:hover {
+  background: #e60000;
+}
